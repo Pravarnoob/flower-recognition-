@@ -1,7 +1,7 @@
 tensorflow
-numpy
-opencv-python
-pillow
-flask
-gunicorn
 streamlit
+numpy
+pillow
+opencv-python
+matplotlib
+pandas
