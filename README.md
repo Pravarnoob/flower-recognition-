@@ -1,39 +1,81 @@
-# Flower Classification using CNN
+# 🌸 Flower Recognition Using CNN
 
-This project aims to classify different types of flowers using Convolutional Neural Networks (CNN). CNNs are widely used for image classification tasks due to their ability to capture spatial dependencies in images.
+## 📌 Project Overview
+This project implements a **Flower Recognition System** using **Convolutional Neural Networks (CNN)** to classify flower images into different categories.  
+The model learns visual features such as color, shape, and texture to accurately recognize flower types.
 
-## Dataset
+---
 
-The project utilizes a dataset containing images of various flower species. The dataset is divided into a training set and a test set, each labeled with the corresponding flower species.
+## 🎯 Objectives
+- Build an image classification model using CNN
+- Perform image preprocessing and augmentation
+- Train and evaluate a deep learning model
+- Deploy the trained model for real-world usage
 
-Download dataset : https://www.kaggle.com/datasets/alxmamaev/flowers-recognition
+---
 
-## Model Architecture
+## 🧠 Tech Stack
+- **Python**
+- **TensorFlow / Keras**
+- **NumPy**
+- **Matplotlib**
+- **OpenCV / PIL**
+- **Flask / Streamlit (for deployment)**
 
-The CNN model used for flower classification consists of multiple layers:
+---
 
-1. **Input Layer**: The input layer receives the image data and passes it to the subsequent layers.
+## 🌼 Dataset
 
-2. **Convolutional Layers**: These layers apply filters to the input image, extracting meaningful features through convolution operations. Each convolutional layer typically includes rectified linear unit (ReLU) activation and pooling layers (e.g., max pooling) to reduce spatial dimensions.
+- **Dataset Name:** Flower Image Dataset  
+- **Number of Classes:** Five 
+- **Image Format:** JPG / PNG  
 
-3. **Flattening Layer**: This layer flattens the output of the previous convolutional layers into a single vector, preparing it for input to the fully connected layers.
+🔗 **Dataset URL:**  
+👉 https://www.kaggle.com/datasets/alxmamaev/flowers-recognition
 
-4. **Fully Connected Layers**: These layers take the flattened features and learn the non-linear relationships between them. They typically include activation functions like ReLU and may incorporate dropout regularization to prevent overfitting.
+> Example sources: Kaggle, TensorFlow Datasets, or custom-collected images.
 
-5. **Output Layer**: The final layer produces the predicted probabilities for each flower species using a suitable activation function (e.g., softmax for multiclass classification).
+---
 
-## Training Process
+## 🏗️ Model Architecture
+- Convolutional Layers
+- Max Pooling Layers
+- Dropout Layers
+- Fully Connected Dense Layers
+- Softmax Output Layer
 
-The model is trained using the training dataset, where the input images are fed through the network, and the predicted outputs are compared to the ground truth labels. The model's weights are adjusted iteratively using optimization techniques such as stochastic gradient descent (SGD) or adaptive algorithms like Adam, with the goal of minimizing a defined loss function.
+---
 
-## Evaluation
+## ⚙️ Project Workflow
+1. Data Collection  
+2. Data Preprocessing & Augmentation  
+3. CNN Model Design  
+4. Model Training  
+5. Model Evaluation  
+6. Model Saving  
+7. Deployment  
 
-After training, the model is evaluated using the test dataset to measure its performance. Evaluation metrics such as accuracy, precision, recall, and F1-score can be computed to assess the model's ability to correctly classify flower images.
+---
 
-## Deployment
+## 🚀 Deployment
 
-Once the model is trained and evaluated, it can be deployed in various ways. 
+The trained model is deployed as a web application that allows users to upload a flower image and receive a predicted flower category.
 
-## Conclusion
+🔗 **Live Deployment (Render):**  
+👉 *[Add Render deployment URL here]*
 
-Flower classification using CNNs demonstrates the power of deep learning techniques in image recognition tasks. By training a CNN model on a labeled dataset of flower images, we can develop a system capable of accurately classifying various flower species.
+---
+
+## 📊 Results
+- Achieved good training and validation accuracy
+- Reduced overfitting using dropout and augmentation
+- Successfully classified unseen flower images
+
+---
+
+## 🧪 How to Run Locally
+
+### 1️⃣ Clone the Repository
+```bash
+git clone https://github.com/your-username/flower-recognition-cnn.git
+cd flower-recognition-cnn
